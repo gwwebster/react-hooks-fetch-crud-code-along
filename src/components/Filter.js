@@ -1,5 +1,10 @@
 import React from "react";
 
+// this component captures changes to <select> dropdown using onChange handler and value attributes on each <option> element,
+// sends up to parent ShoppingList to update state there
+// parent ShoppingList sends current value of selectedCategory state to this component, 
+// which is displayed via value attribute on <select> element
+
 function Filter({ category, onCategoryChange }) {
   return (
     <div className="Filter">
